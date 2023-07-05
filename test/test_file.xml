@@ -1,0 +1,18 @@
+<informationTable>
+<infoTable>
+<nameOfIssuer>Test Company</nameOfIssuer>
+<titleOfClass>COM</titleOfClass>
+<cusip>012345678</cusip>
+<value>100000</value>
+<shrsOrPrnAmt>
+<sshPrnamt>5000</sshPrnamt>
+<sshPrnamtType>SH</sshPrnamtType>
+</shrsOrPrnAmt>
+<investmentDiscretion>SOLE</investmentDiscretion>
+<votingAuthority>
+<Sole>5000</Sole>
+<Shared>0</Shared>
+<None>0</None>
+</votingAuthority>
+</infoTable>
+</informationTable>
