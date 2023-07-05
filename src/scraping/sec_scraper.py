@@ -16,15 +16,16 @@ def parse_xml(xml_content):
     for info_table in root.findall('infoTable'):
         # The "useful information" being extracted
         yield {
-            'nameOfIssuer': info_table.find('nameOfIssuer').text,
-            'titleOfClass': info_table.find('titleOfClass').text,
-            'cusip': info_table.find('cusip').text,
-            'value': info_table.find('value').text,
-            'sshPrnamt': info_table.find('sshPrnamt').text,
-            'investmentDiscretion': info_table.find('investmentDiscretion').text,
-            'votingAuthority': info_table.find('votingAuthority').text,
-            
+            'nameOfIssuer': info_table.find('nameOfIssuer').text if info_table.find('nameOfIssuer') is not None else 'Missing',
+            'titleOfClass': info_table.find('titleOfClass').text if info_table.find('titleOfClass') is not None else 'Missing',
+            'cusip': info_table.find('cusip').text if info_table.find('cusip') is not None else 'Missing',
+            'value': info_table.find('value').text if info_table.find('value') is not None else 'Missing',
+            'sshPrnamt': info_table.find('shrsOrPrnAmt/sshPrnamt').text if info_table.find('shrsOrPrnAmt/sshPrnamt') is not None else 'Missing',
+            'investmentDiscretion': info_table.find('investmentDiscretion').text if info_table.find('investmentDiscretion') is not None else 'Missing',
         }
+
+
+
 
 #Saves data from list of dictionaries to a CSV file with specified filename
 def save_data(data, filename):

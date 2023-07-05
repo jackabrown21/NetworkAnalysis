@@ -3,7 +3,7 @@ import pandas as pd
 from src.scraping.sec_scraper import parse_xml, save_data
 
 def test_parse_xml():
-    with open('test_file.xml', 'r') as file:
+    with open('test/test_file.xml', 'r') as file:
         xml_content = file.read()
         data = list(parse_xml(xml_content))
         assert len(data) == 1
@@ -11,7 +11,9 @@ def test_parse_xml():
             'nameOfIssuer': 'Test Company',
             'titleOfClass': 'COM',
             'cusip': '012345678',
-            #...
+            'value': '100000',
+            'sshPrnamt': '5000',
+            'investmentDiscretion': 'SOLE',
         }
 
 def test_save_data():
