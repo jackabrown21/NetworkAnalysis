@@ -28,7 +28,8 @@ def scrape_13f(file):
 pd.set_option('display.max_rows', None)
 folder_path = "data/raw/SoutheasternAssetManagement"
 file_list = os.listdir(folder_path)
-output_folder = "data/output"  # Specify the output folder path
+
+output_folder = "data/output" 
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
@@ -36,7 +37,7 @@ if not os.path.exists(output_folder):
 for file in file_list:
     file_path = os.path.join(folder_path, file)
     df = scrape_13f(file_path)
-    output_file = os.path.join(output_folder, f"{file.strip('.xml')}.csv")  # Construct the output file path
-    df.to_csv(output_file, index=False)  # Save the DataFrame as a CSV file
+    output_file = os.path.join(output_folder, f"{file.strip('.xml')}.csv")
+    df.to_csv(output_file, index=False)
 
     print(f"CSV file saved: {output_file}")
