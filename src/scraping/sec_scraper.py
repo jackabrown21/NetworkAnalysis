@@ -2,6 +2,17 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+def get_headers():
+    return {
+        'User-Agent': os.getenv('USER_AGENT'),
+        'Accept-Encoding': os.getenv('ACCEPT_ENCODING'),
+        'Host': os.getenv('HOST'),
+        'From': os.getenv('FROM')
+    }
 
 def generate_urls(cik, accession_number):
     list_of_urls = []
@@ -21,12 +32,7 @@ def read_csv_and_generate_urls(file_path, cik):
     return sec_filing_urls
 
 def get_links(url):
-    headers = {
-        'User-Agent': 'Jack Brown jackabrown21@gmail.com',
-        'Accept-Encoding': 'gzip, deflate',
-        'Host': 'www.sec.gov',
-        'From': 'jackabrown21@gmail.com'
-    }
+    headers = get_headers()
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         page_content = response.content
@@ -47,12 +53,7 @@ def get_the_xml_link_we_want_to_download(link_list):
     return "https://www.sec.gov/" + the_xmls_on_that_page[-1]
 
 def download_files_from_links(links, directory='data/raw/SoutheasternAssetManagement'):
-    headers = {
-        'User-Agent': 'Jack Brown jackabrown21@gmail.com',
-        'Accept-Encoding': 'gzip, deflate',
-        'Host': 'www.sec.gov',
-        'From': 'jackabrown21@gmail.com'
-    }
+    headers = get_headers()
     if not os.path.exists(directory):
         os.makedirs(directory)
 
