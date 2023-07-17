@@ -79,12 +79,7 @@ def download_files_from_links(links, directory='data/raw/SoutheasternAssetManage
             print(f'Failed to download file from link: {link}')
             print(f'Error: {err}')
 
-
-
-
 def main():
-
-
     # Put in the file path of the CSV you have set up
     file_path = 'data/raw/SoutheasternAssetManagementSince2014.csv'
 
