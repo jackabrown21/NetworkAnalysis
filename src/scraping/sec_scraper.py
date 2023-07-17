@@ -46,12 +46,6 @@ def get_the_xml_link_we_want_to_download(link_list):
             the_xmls_on_that_page.append(link)
     return "https://www.sec.gov/" + the_xmls_on_that_page[-1]
 
-import os
-import requests
-
-import os
-import requests
-
 def download_files_from_links(links, directory='data/raw/SoutheasternAssetManagement'):
     headers = {
         'User-Agent': 'Jack Brown jackabrown21@gmail.com',
@@ -66,10 +60,9 @@ def download_files_from_links(links, directory='data/raw/SoutheasternAssetManage
         try:
             filename = link.split('/')[-1]
             filepath = os.path.join(directory, filename)
-            # Only download the file if it does not already exist
             if not os.path.exists(filepath):
                 response = requests.get(link, headers=headers)
-                response.raise_for_status() # This line will raise an exception if the request is not successful
+                response.raise_for_status()
                 with open(filepath, 'wb') as file:
                     file.write(response.content)
                 print(f'Successfully downloaded file: {filepath}')
@@ -83,7 +76,7 @@ def main():
     # Put in the file path of the CSV you have set up
     file_path = 'data/raw/SoutheasternAssetManagementSince2014.csv'
 
-    # Put in the CIK number of the data of the company inside that CSV
+    # Put in the CIK number of the company inside that CSV
     cik = 807985
 
     sec_filings_htm_urls = read_csv_and_generate_urls(file_path, cik)
@@ -95,10 +88,6 @@ def main():
     final_list_of_every_single_xml_file_to_download = []
     for list in huge_list_of_lists_of_every_single_link_on_every_single_filing:
         final_list_of_every_single_xml_file_to_download.append(get_the_xml_link_we_want_to_download(list))
-    
-
-    # What get's printed is the link of every single XML that you want to download
-    #print(final_list_of_every_single_xml_file_to_download)
 
     # Change the directory to wherever you want each of these files to be saved
     download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/SoutheasternAssetManagement')
