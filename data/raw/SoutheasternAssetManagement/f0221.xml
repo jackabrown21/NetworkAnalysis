@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<informationTable xmlns="http://www.sec.gov/edgar/document/thirteenf/informationtable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<infoTable>
+  <nameOfIssuer>Affiliated Managers Group Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>008252108</cusip>
+  <value>109622</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>710862</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>455144</Sole>
+    <Shared>0</Shared>
+    <None>255718</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Affiliated Managers Group Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>008252108</cusip>
+  <value>123394</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>800171</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>800171</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Alibaba Group Holding-SP ADR</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>01609W102</cusip>
+  <value>73747</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>325190</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>153822</Sole>
+    <Shared>0</Shared>
+    <None>171368</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Alibaba Group Holding-SP ADR</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>01609W102</cusip>
+  <value>40612</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>179083</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>179083</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Baidu, Inc. ADR</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>056752108</cusip>
+  <value>147515</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>723469</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>384389</Sole>
+    <Shared>0</Shared>
+    <None>339080</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Baidu, Inc. ADR</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>056752108</cusip>
+  <value>43635</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>214001</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>214001</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>CNH Industrial NV - U.S.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>N20944109</cusip>
+  <value>43395</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2595375</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>2595375</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>CNX Resources Corp</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>12653C108</cusip>
+  <value>163792</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>11990629</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>6066864</Sole>
+    <Shared>1315303</Shared>
+    <None>4608462</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>CNX Resources Corp</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>12653C108</cusip>
+  <value>220962</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>16175852</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>16175852</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Comcast Corporation Cl A</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>20030N101</cusip>
+  <value>158913</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2786977</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>1347785</Sole>
+    <Shared>474350</Shared>
+    <None>964842</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Comcast Corporation Cl A</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>20030N101</cusip>
+  <value>106179</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>1862139</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>1862139</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Douglas Emmett Inc</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>25960P109</cusip>
+  <value>85412</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2540510</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>1138901</Sole>
+    <Shared>0</Shared>
+    <None>1401609</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Douglas Emmett Inc</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>25960P109</cusip>
+  <value>95065</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2827624</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>2827624</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Eastman Kodak Company</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>277461406</cusip>
+  <value>21090</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2534892</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>2534892</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Empire State Realty Trust Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>292104106</cusip>
+  <value>33914</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2826194</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>5097</Sole>
+    <Shared>1837144</Shared>
+    <None>983953</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Empire State Realty Trust Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>292104106</cusip>
+  <value>5460</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>455000</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>455000</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Empire State Realty Trust Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>292104106</cusip>
+  <value>123298</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>10274803</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>10274803</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Everest Re Group Ltd.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>G3223R108</cusip>
+  <value>42545</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>168824</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>68586</Sole>
+    <Shared>0</Shared>
+    <None>100238</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Everest Re Group Ltd.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>G3223R108</cusip>
+  <value>83152</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>329954</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>329954</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>FedEx Corporation</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>31428X106</cusip>
+  <value>155523</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>521312</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>240588</Sole>
+    <Shared>96879</Shared>
+    <None>183845</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>FedEx Corporation</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>31428X106</cusip>
+  <value>96878</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>324735</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>324735</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>General Electric</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>369604103</cusip>
+  <value>176712</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>13128659</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>6099950</Sole>
+    <Shared>2632427</Shared>
+    <None>4396282</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>General Electric</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>369604103</cusip>
+  <value>11791</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>876000</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>876000</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>General Electric</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>369604103</cusip>
+  <value>103153</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>7663648</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>7663648</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Graham Holdings Company</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>384637104</cusip>
+  <value>33556</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>52936</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>38402</Sole>
+    <Shared>0</Shared>
+    <None>14534</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Graham Holdings Company</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>384637104</cusip>
+  <value>104910</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>165499</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>165499</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Hyatt Hotels Corp. -  Class A</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>448579102</cusip>
+  <value>106716</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>1374494</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>614970</Sole>
+    <Shared>320917</Shared>
+    <None>438607</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Hyatt Hotels Corp. -  Class A</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>448579102</cusip>
+  <value>6366</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>82000</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>82000</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Hyatt Hotels Corp. -  Class A</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>448579102</cusip>
+  <value>156255</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2012552</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>2012552</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>JOYY Inc. ADR</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>46591M109</cusip>
+  <value>44731</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>678058</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>364414</Sole>
+    <Shared>0</Shared>
+    <None>313644</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Lazard Ltd</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>G54050102</cusip>
+  <value>59768</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>1320834</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>709080</Sole>
+    <Shared>483167</Shared>
+    <None>128587</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Lazard Ltd</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>G54050102</cusip>
+  <value>164986</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>3646094</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>3646094</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Liberty Media Corp - Braves C</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>531229888</cusip>
+  <value>35</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>1271</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>1271</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Liberty Media Corp - Braves C</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>531229888</cusip>
+  <value>71168</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2562776</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>2562776</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Lumen Technologies</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>550241103</cusip>
+  <value>344400</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>25342195</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>11738057</Sole>
+    <Shared>4735738</Shared>
+    <None>8868400</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Lumen Technologies</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>550241103</cusip>
+  <value>5776</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>425000</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>425000</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Lumen Technologies</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>550241103</cusip>
+  <value>487751</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>35890451</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>35890451</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Madison Square Garden Sports C</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>55825T103</cusip>
+  <value>38526</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>223250</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>243</Sole>
+    <Shared>0</Shared>
+    <None>223007</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Madison Square Garden Sports C</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>55825T103</cusip>
+  <value>9923</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>57500</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>57500</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Madison Square Garden Sports C</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>55825T103</cusip>
+  <value>84706</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>490852</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>490852</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Mattel, Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>577081102</cusip>
+  <value>128219</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>6379073</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>2237830</Sole>
+    <Shared>1116578</Shared>
+    <None>3024665</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Mattel, Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>577081102</cusip>
+  <value>13125</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>653000</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>02</otherManager>
+  <votingAuthority>
+    <Sole>0</Sole>
+    <Shared>0</Shared>
+    <None>653000</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Mattel, Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>577081102</cusip>
+  <value>240371</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>11958771</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>11958771</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Melco Resorts &amp; Entertainment </nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>585464100</cusip>
+  <value>1106</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>66723</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>42522</Sole>
+    <Shared>0</Shared>
+    <None>24201</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>MGM Resorts International</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>552953101</cusip>
+  <value>127314</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2985097</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>1832371</Sole>
+    <Shared>0</Shared>
+    <None>1152726</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>MGM Resorts International</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>552953101</cusip>
+  <value>112414</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>2635740</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>2635740</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Realogy Holdings Corporation</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>75605Y106</cusip>
+  <value>13061</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>716832</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>4268</Sole>
+    <Shared>0</Shared>
+    <None>712564</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Realogy Holdings Corporation</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>75605Y106</cusip>
+  <value>145308</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>7975208</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>7975208</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Williams Companies, Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>969457100</cusip>
+  <value>114520</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>4313359</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>SOLE</investmentDiscretion>
+  <votingAuthority>
+    <Sole>2626476</Sole>
+    <Shared>0</Shared>
+    <None>1686883</None>
+  </votingAuthority>
+</infoTable>
+<infoTable>
+  <nameOfIssuer>Williams Companies, Inc.</nameOfIssuer>
+  <titleOfClass>COM</titleOfClass>
+  <cusip>969457100</cusip>
+  <value>92908</value>
+  <shrsOrPrnAmt>
+    <sshPrnamt>3499375</sshPrnamt>
+    <sshPrnamtType>SH</sshPrnamtType>
+  </shrsOrPrnAmt>
+  <investmentDiscretion>DFND</investmentDiscretion>
+  <otherManager>01</otherManager>
+  <votingAuthority>
+    <Sole>3499375</Sole>
+    <Shared>0</Shared>
+    <None>0</None>
+  </votingAuthority>
+</infoTable>
+</informationTable>
