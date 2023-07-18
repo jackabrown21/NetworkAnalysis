@@ -37,4 +37,3 @@ df = process_xml_file(filepath)
 
 # Print the DataFrame
 print(df)
-df.to_csv('data/output/outputfile.csv', index=False)
