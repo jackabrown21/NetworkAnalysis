@@ -37,3 +37,6 @@ df = process_xml_file(filepath)
 
 # Print the DataFrame
 print(df)
+
+# Save the DataFrame to a csv
+df.to_csv("data/processed", index=False)
