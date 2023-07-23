@@ -1,7 +1,7 @@
 import csv
 from bs4 import BeautifulSoup
 
-def process_file(file_name):
+def process_file(file_name, file_to_be_written_to):
     with open(file_name, 'r') as f:
         data = f.read()
 
@@ -26,9 +26,16 @@ def process_file(file_name):
 
         data.append([name_of_issuer, title_of_class, cusip, value, sshPrnamt, sshPrnamtType, investmentDiscretion, other_manager, sole, shared, none])
 
-    with open('data/processed/cash.csv', 'w', newline='') as f:
+    with open(file_to_be_written_to, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['Name of Issuer', 'Title of Class', 'CUSIP', 'Value', 'sshPrnamt', 'sshPrnamtType', 'Investment Discretion', 'Other Manager', 'Sole', 'Shared', 'None'])
         writer.writerows(data)
 
-process_file('data/raw/SoutheasternAssetManagement/13f122.xml')
+
+def main():
+    # Put the path of the file that you want to be processed as the first argument, and the path of the csv you want it to be saved to as the second argument
+    process_file('data/raw/SoutheasternAssetManagement/13f122.xml', "data/processed/cash.csv")
+
+
+if __name__ == "__main__":
+    main()
