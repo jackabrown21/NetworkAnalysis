@@ -31,11 +31,9 @@ def process_file(file_name, file_to_be_written_to):
         writer.writerow(['Name of Issuer', 'Title of Class', 'CUSIP', 'Value', 'sshPrnamt', 'sshPrnamtType', 'Investment Discretion', 'Other Manager', 'Sole', 'Shared', 'None'])
         writer.writerows(data)
 
-
 def main():
     # Put the path of the file that you want to be processed as the first argument, and the path of the csv you want it to be saved to as the second argument
     process_file('data/raw/SoutheasternAssetManagement/13f122.xml', "data/processed/cash.csv")
-
 
 if __name__ == "__main__":
     main()
