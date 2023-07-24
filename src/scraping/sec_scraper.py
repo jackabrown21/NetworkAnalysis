@@ -3,8 +3,13 @@ import requests
 from bs4 import BeautifulSoup
 import os
 from dotenv import load_dotenv
+import hashlib
 
 load_dotenv()
+
+def get_safe_filename(url):
+    url_hash = hashlib.md5(url.encode()).hexdigest()
+    return f'{url_hash}.xml'
 
 def get_headers():
     return {
@@ -52,14 +57,14 @@ def get_the_xml_link_we_want_to_download(link_list):
             the_xmls_on_that_page.append(link)
     return "https://www.sec.gov/" + the_xmls_on_that_page[-1]
 
-def download_files_from_links(links, directory='data/raw/SoutheasternAssetManagement'):
+def download_files_from_links(links, directory):
     headers = get_headers()
     if not os.path.exists(directory):
         os.makedirs(directory)
 
     for link in links:
         try:
-            filename = link.split('/')[-1]
+            filename = get_safe_filename(link)
             filepath = os.path.join(directory, filename)
             if not os.path.exists(filepath):
                 response = requests.get(link, headers=headers)
@@ -75,10 +80,10 @@ def download_files_from_links(links, directory='data/raw/SoutheasternAssetManage
 
 def main():
     # Put in the file path of the CSV you have set up
-    file_path = 'data/raw/SoutheasternAssetManagementSince2014.csv'
+    file_path = 'data/raw/PolenCapitalManagementSince2014.csv'
 
     # Put in the CIK number of the company inside that CSV
-    cik = 807985
+    cik = 1034524
 
     sec_filings_htm_urls = read_csv_and_generate_urls(file_path, cik)
 
@@ -91,7 +96,7 @@ def main():
         final_list_of_every_single_xml_file_to_download.append(get_the_xml_link_we_want_to_download(list))
 
     # Change the directory to wherever you want each of these files to be saved
-    download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/SoutheasternAssetManagement')
+    download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/PolenCapitalManagement')
 
 if __name__ == "__main__":
     main()
