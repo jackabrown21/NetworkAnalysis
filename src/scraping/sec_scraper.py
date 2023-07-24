@@ -80,10 +80,10 @@ def download_files_from_links(links, directory):
 
 def main():
     # Put in the file path of the CSV you have set up
-    file_path = 'data/raw/PolenCapitalManagementSince2014.csv'
+    file_path = 'data/raw/FiduciaryManagementIncSince2014.csv'
 
     # Put in the CIK number of the company inside that CSV
-    cik = 1034524
+    cik = 764532
 
     sec_filings_htm_urls = read_csv_and_generate_urls(file_path, cik)
 
@@ -96,7 +96,7 @@ def main():
         final_list_of_every_single_xml_file_to_download.append(get_the_xml_link_we_want_to_download(list))
 
     # Change the directory to wherever you want each of these files to be saved
-    download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/PolenCapitalManagement')
+    download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/FiduciaryManagementInc')
 
 if __name__ == "__main__":
     main()
