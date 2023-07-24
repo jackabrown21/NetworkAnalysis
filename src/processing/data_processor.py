@@ -33,7 +33,7 @@ def process_file(file_name, file_to_be_written_to):
 
 def main():
     # Put the path of the file that you want to be processed as the first argument, and the path of the csv you want it to be saved to as the second argument
-    process_file('data/raw/PolenCapitalManagement/1a27bf39005ff6148cc7bbd08b9989ba.xml', "data/processed/PolenCapitalManagement/cashagain.csv")
+    process_file('data/raw/FiduciaryManagementInc/1cd1c96e0d0735a96cb1748f2dfe2360.xml', "data/processed/FiduciaryManagementInc/cashagainagain.csv")
 
 if __name__ == "__main__":
     main()
