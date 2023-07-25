@@ -79,24 +79,40 @@ def download_files_from_links(links, directory):
             print(f'Error: {err}')
 
 def main():
-    # Put in the file path of the CSV you have set up
-    file_path = 'data/raw/FiduciaryManagementIncSince2014.csv'
 
-    # Put in the CIK number of the company inside that CSV
-    cik = 764532
+    # Dictionary of companies and their respective CIK numbers
+    investment_firms = {
+    "FiduciaryManagementInc": 764532,
+    "SoutheasternAssetManagement": 807985,
+    "PolenCapital": 1034524,
+    "TweedyBrowne": 732905,
+    "Dodge&Cox": 200217,
+    "HarrisAssociates": 813917,
+    "RuaneCuniff&Goldfarb": 1720792,
+    "ArielInvestments": 936753,
+    "GardnerRusso&Quinn": 860643,
+    "FirstEagleInvestmentManagement": 1325447,
+    "VulcanValuePartners": 1556785,
+    "DavisSelectedAdvisors": 1036325
+}
 
-    sec_filings_htm_urls = read_csv_and_generate_urls(file_path, cik)
+    # Assuming that the CSV files are named after the companies and are located in 'data/raw/companies_since_2014_csvs'
+    base_file_path = 'data/raw/companies_since_2014_csvs/'
 
-    huge_list_of_lists_of_every_single_link_on_every_single_filing = []
-    for i in sec_filings_htm_urls:
-        huge_list_of_lists_of_every_single_link_on_every_single_filing.append(get_links(i))
+    for company_name, cik in investment_firms.items():
+        company_file_path = base_file_path + company_name + '.csv'
+        sec_filings_htm_urls = read_csv_and_generate_urls(company_file_path, cik)
 
-    final_list_of_every_single_xml_file_to_download = []
-    for list in huge_list_of_lists_of_every_single_link_on_every_single_filing:
-        final_list_of_every_single_xml_file_to_download.append(get_the_xml_link_we_want_to_download(list))
+        huge_list_of_lists_of_every_single_link_on_every_single_filing = []
+        for i in sec_filings_htm_urls:
+            huge_list_of_lists_of_every_single_link_on_every_single_filing.append(get_links(i))
 
-    # Change the directory to wherever you want each of these files to be saved
-    download_files_from_links(final_list_of_every_single_xml_file_to_download, directory='data/raw/FiduciaryManagementInc')
+        final_list_of_every_single_xml_file_to_download = []
+        for list in huge_list_of_lists_of_every_single_link_on_every_single_filing:
+            final_list_of_every_single_xml_file_to_download.append(get_the_xml_link_we_want_to_download(list))
+
+        # Create and save each XML to a folder in data/raw with the name of the company as the name of the folder
+        download_files_from_links(final_list_of_every_single_xml_file_to_download, directory=f'data/raw/{company_name}')
 
 if __name__ == "__main__":
     main()
