@@ -1,72 +1,68 @@
+import os
 from matplotlib import pyplot as plt
 import pandas as pd
 import networkx as nx
+import matplotlib.cm as cm
 
-# Load the CSV file
-df = pd.read_csv("data/processed/SoutheastenAssetManagement/cash.csv")
-df2 = pd.read_csv("data/processed/PolenCapitalManagement/cashagainhardcoded.csv")
-df3 = pd.read_csv("data/processed/FiduciaryManagementInc/cashagainagainhardcoded.csv")
+def main():
+    # Specify your base directory
+    input_base_dir = 'data/processed'
 
-# Define the investing companies
-investing_company = "Southeastern Asset Management"
-new_investing_company = "Polen Capital Management"
-newer_investing_company = "Fiduciary Management Incorporated"
+    full_G = nx.Graph()
 
-# Create the graph
-G = nx.Graph()
+    investments_dict = {}
 
-# Add investing companies as nodes
-G.add_node(investing_company)
-G.add_node(new_investing_company)
-G.add_node(newer_investing_company)
+    for company_name in os.listdir(input_base_dir):
+        input_company_dir = os.path.join(input_base_dir, company_name)
 
-# Create a dictionary to hold the invested companies and the investing companies
-investments_dict = {}
+        if not os.path.isdir(input_company_dir):
+            continue
 
-# Iterate over each row in the first dataframe
-for index, row in df.iterrows():
-    invested_company = row['Name of Issuer'].lower()  # normalize the company name
-    if invested_company not in G.nodes:  # only add the node if it's not already in the graph
-        G.add_node(invested_company)
-    G.add_edge(investing_company, invested_company)
-    investments_dict[invested_company] = investments_dict.get(invested_company, [])
-    investments_dict[invested_company].append(investing_company)
+        for file_name in os.listdir(input_company_dir):
+            if file_name.endswith('.csv'):
+                file_path = os.path.join(input_company_dir, file_name)
 
-# Iterate over each row in the second dataframe
-for index, row in df2.iterrows():
-    new_invested_company = row['Name of Issuer'].lower()  # normalize the company name
-    if new_invested_company not in G.nodes:  # only add the node if it's not already in the graph
-        G.add_node(new_invested_company)
-    G.add_edge(new_investing_company, new_invested_company)
-    investments_dict[new_invested_company] = investments_dict.get(new_invested_company, [])
-    investments_dict[new_invested_company].append(new_investing_company)
+                df = pd.read_csv(file_path)
 
-# Iterate over each row in the third dataframe
-for index, row in df3.iterrows():
-    newer_invested_company = row['Name of Issuer'].lower()  # normalize the company name
-    if newer_invested_company not in G.nodes:  # only add the node if it's not already in the graph
-        G.add_node(newer_invested_company)
-    G.add_edge(newer_investing_company, newer_invested_company)
-    investments_dict[newer_invested_company] = investments_dict.get(newer_invested_company, [])
-    investments_dict[newer_invested_company].append(newer_investing_company)
+                full_G.add_node(company_name)
 
-# Create a list of node colors
-colors = []
-for node in G.nodes:
-    if node in [investing_company, new_investing_company, newer_investing_company]: 
-        colors.append("blue")
-    else:
-        # count the number of investing companies connected to the node
-        investing_companies_connected = sum(neighbor in [investing_company, new_investing_company, newer_investing_company] 
-                                            for neighbor in G.neighbors(node))
-        if investing_companies_connected == 1:
-            colors.append("grey")
-        elif investing_companies_connected == 2:
-            colors.append("pink")
-        else:  # investing_companies_connected > 2
-            colors.append("red")
+                for index, row in df.iterrows():
+                    invested_company = row['Name of Issuer'].lower()  
+                    if invested_company not in full_G.nodes:  
+                        full_G.add_node(invested_company)
+                    full_G.add_edge(company_name, invested_company)
+                    investments_dict[invested_company] = investments_dict.get(invested_company, [])
+                    investments_dict[invested_company].append(company_name)
 
-# Draw the graph
-nx.draw(G, with_labels=True, node_color=colors, font_size=7)
-plt.show()
+                break
 
+    G = nx.Graph()
+
+    for node in full_G.nodes:
+        neighbors = list(full_G.neighbors(node))
+        if len(neighbors) > 1 or node in os.listdir(input_base_dir):
+            G.add_node(node)
+            for neighbor in neighbors:
+                G.add_edge(node, neighbor)
+
+    colors = []
+    # Put the number of investing companies
+    max_investing_companies = 12 
+
+    for node in G.nodes:
+        if node in os.listdir(input_base_dir): 
+            colors.append("green")  # Investing companies will have a fixed green color (or whatever color you want)
+        else:
+            investing_companies_connected = sum(neighbor in os.listdir(input_base_dir)
+                                                for neighbor in G.neighbors(node))
+            if investing_companies_connected == 1:
+                colors.append("grey")
+            else:
+                normalized_value = 0.5 + (investing_companies_connected - 2) / (2 * (max_investing_companies - 2))
+                colors.append(cm.Reds(normalized_value))  # Use the Reds colormap to color nodes (or whatever colormap you want)
+
+    nx.draw(G, with_labels=True, node_color=colors, font_size=7)
+    plt.show()
+
+if __name__ == "__main__":
+    main()
