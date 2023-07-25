@@ -1,5 +1,6 @@
 import csv
 from bs4 import BeautifulSoup
+import os
 
 def process_file(file_name, file_to_be_written_to):
     with open(file_name, 'r') as f:
@@ -31,9 +32,32 @@ def process_file(file_name, file_to_be_written_to):
         writer.writerow(['Name of Issuer', 'Title of Class', 'CUSIP', 'Value', 'sshPrnamt', 'sshPrnamtType', 'Investment Discretion', 'Other Manager', 'Sole', 'Shared', 'None'])
         writer.writerows(data)
 
+
 def main():
-    # Put the path of the file that you want to be processed as the first argument, and the path of the csv you want it to be saved to as the second argument
-    process_file('data/raw/FiduciaryManagementInc/1cd1c96e0d0735a96cb1748f2dfe2360.xml', "data/processed/FiduciaryManagementInc/cashagainagain.csv")
+    # Specify your directory with all of the raw XMLs
+    input_base_dir = 'data/raw'
+
+    # Specify your the directory where you would like all of the new folders with their CSVs inside to be saved
+    output_base_dir = 'data/processed'
+
+    for company_name in os.listdir(input_base_dir):
+        input_company_dir = os.path.join(input_base_dir, company_name)
+
+        if not os.path.isdir(input_company_dir):
+            continue
+
+        output_company_dir = os.path.join(output_base_dir, company_name)
+
+        os.makedirs(output_company_dir, exist_ok=True)
+
+        for file_name in os.listdir(input_company_dir):
+            if file_name.endswith('.xml'):
+                output_file_name = file_name.replace('.xml', '.csv')
+
+                input_file_path = os.path.join(input_company_dir, file_name)
+                output_file_path = os.path.join(output_company_dir, output_file_name)
+
+                process_file(input_file_path, output_file_path)
 
 if __name__ == "__main__":
     main()
