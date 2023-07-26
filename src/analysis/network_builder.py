@@ -3,6 +3,8 @@ from matplotlib import pyplot as plt
 import pandas as pd
 import networkx as nx
 import matplotlib.cm as cm
+import json
+
 
 def main():
     # Specify your base directory
@@ -63,6 +65,14 @@ def main():
 
     nx.draw(G, with_labels=True, node_color=colors, font_size=7)
     plt.show()
+
+    nodes = [{'id': node, 'color': color} for node, color in zip(G.nodes(), colors)]
+    links = [{'source': u, 'target': v} for u, v in G.edges()]
+
+    # Create JSON data and write to file
+    json_data = json.dumps({'nodes': nodes, 'links': links}, indent=4)
+    with open('data/jsonnetworks/graph.json', 'w') as f:
+        f.write(json_data)
 
 if __name__ == "__main__":
     main()
