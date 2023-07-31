@@ -71,7 +71,7 @@ def main():
 
     # Create JSON data and write to file
     json_data = json.dumps({'nodes': nodes, 'links': links}, indent=4)
-    with open('data/jsonnetworks/graph.json', 'w') as f:
+    with open('src/visualization/jsonnetworks/graph.json', 'w') as f:
         f.write(json_data)
 
 if __name__ == "__main__":
