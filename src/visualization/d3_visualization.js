@@ -1,23 +1,28 @@
-var width = 800;
+var maxWidth = window.innerWidth;
+
+var padding = 100;
+var width = maxWidth - padding;
 var height = 600;
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#chart-container").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var g = svg.append("g");
+
 d3.json("jsonnetworks/graph.json").then(function(graph) {
     var simulation = d3.forceSimulation(graph.nodes)
-        .force("link", d3.forceLink(graph.links).id(function(d) { return d.id; }))
-        .force("charge", d3.forceManyBody())
+        .force("link", d3.forceLink(graph.links).id(function(d) { return d.id; }).distance(50))
+        .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    var link = svg.selectAll("line")
+    var link = g.selectAll("line")
         .data(graph.links)
         .enter().append("line")
             .attr("stroke", "#999")
             .attr("stroke-opacity", 0.6);
 
-    var node = svg.selectAll("circle")
+    var node = g.selectAll("circle")
         .data(graph.nodes)
         .enter().append("circle")
             .attr("r", 5)
