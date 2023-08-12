@@ -13,6 +13,19 @@
       text-align: center;
       width: 100%;
     }
+
+    #search-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #search {
+      font-size: 18px;
+      padding: 10px 15px;
+      width: 160px;
+      border-radius: 5px;
+      border: 2px solid #ccc;
+    }
   </style>
 </head>
 
@@ -20,6 +33,10 @@
   <div id="chart-container">
     <h1>Network Analysis</h1>
   </div>
+  <div id="search-container">
+    <input type="text" id="search" placeholder="Search for a node...">
+  </div>
+
   <script src="d3_visualization.js"></script>
 </body>
 
