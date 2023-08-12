@@ -7,6 +7,8 @@ var svg = d3.select("#chart-container").append("svg")
     .attr("width", width)
     .attr("height", height);
 
+var searchInput = d3.select("#search");
+
 var g = svg.append("g");
 
 var legendG = svg.append("g")
@@ -46,7 +48,6 @@ svg.call(zoom);
 
 function zoomed({ transform }) {
     g.attr("transform", transform);
-    legendG.attr("transform", `translate(${10 / transform.k}, ${10 / transform.k})`);
 }
 
 d3.json("jsonnetworks/graph.json").then(function (graph) {
@@ -117,7 +118,6 @@ d3.json("jsonnetworks/graph.json").then(function (graph) {
         })
         .attr("stroke-width", 5);
 
-
     var tooltip = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0)
@@ -155,6 +155,23 @@ d3.json("jsonnetworks/graph.json").then(function (graph) {
         tooltip.html(tooltipText)
             .style("left", x + "px")
             .style("top", (y - 28) + "px");
+    });
+
+    searchInput.on("input", function () {
+        let searchValue = this.value;
+
+        node.attr("stroke", function (d) {
+            if (d.color === "pink") {
+                return "black";
+            } else {
+                return "transparent";
+            }
+        });
+
+        if (searchValue) {
+            let matchedNode = node.filter(d => d.id.toLowerCase().includes(searchValue.toLowerCase()));
+            matchedNode.attr("stroke", "blue");
+        }
     });
 
     document.addEventListener("click", function () {
